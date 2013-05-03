@@ -1,0 +1,11 @@
+###本文基本上是来自 pdf 神奇的Perl
+1:变量第一次没$  后来调用时需要有$
+2:数组是需要在前面加上@
+3:perl的一些特殊变量
+4:perl有几个默认的文件句柄 
+5：my的作用域暂时不太
+6:http://perldoc.perl.org/perlintro.html#Running-Perl-programs
+  我获得到很多入门的帮助from here
+  perl -v ----->
+
+
