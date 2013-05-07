@@ -1,0 +1,5 @@
+check for the double words (such as this this), a common problem with 
+* find double words despite capitalization difference,such as with 'the the '' 
+as well as allow differing amounts of whitespace(space,tabs,/\<(1,000,000)>|million|thousand thousand)/.
+But the alternation can't be
+you can can can that taht
