@@ -1,0 +1,7 @@
+src = fdsfsdf.txt fsdfejf dj \
+  fdf.9fs sdfd.0 \n
+  sfdfasdfksdofk \
+  dfsdfj
+
+str=fdsfsdfd.c fdof.3 fsdfd\t
+fsdfsdflk.c \gfd
