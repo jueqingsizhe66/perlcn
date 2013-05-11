@@ -1,0 +1,15 @@
+#!/usr/bin/perl
+my $RecordPossible = qr{
+    (?{
+       #compare the current match($&) with the match before
+       if(not define($longest_match)
+           or 
+           length($&) > length($longest_match))
+           {
+               $longest_match = $&;
+               }
+        })      
+   (?!) #sure to be failed,and find another match with the backtrack
+}x;
+
+
