@@ -1,3 +1,22 @@
+
+##把perl的qr对象转化为标准正则文本的形式（语法规则）
+# 这就是简单的把regex对象转化为字符串的功能 （这个字符串从严格意义上来说
+# 也叫做正则文字！！！只要简单的把qr对象打印出来就可以
+# 从这个角度来说 qr对象的内部存储其实是不喜欢在{}{}后面添加modifies的
+# 而是直接在开头添加！直接声明自己的所运用模式！
+root at xinran-N53SM in /home/PerlHome/PerlStage2 on git:develop+?
+$ perl -e 'print qr{/b\w+\b}x,"\n";'
+(?x-ism:/b\w+\b)
+
+
+#读取一行中所有的浮点数  改进来自  "23.25.5.122" =~ m/\d+/g 匹配其中的id数目
+54.156	4.343	31.2	.34	.3	Freeing REx: "\d+(?:\.\d+)|\.\d+"
+
+xinran at xinran-N53SM in ~
+$ perl -w -Mre=debugcolor -e '@nums = "54.156 sdfjid f4.343 31.2 jidsif.34.3" =~ m/\d+(?:\.\d+)|\.\d+/g;foreach $k (@nums){print $k,"\t";}'
+
+
+
 #能够进行命令行最关键的就是   perl的-ne开关
 #python 由于具有严格的缩进控制  且没有；进行分离每一句
 #基本上命令行是比较少用的！
@@ -11,7 +30,7 @@
 熟悉其最强大的三个函数：substr、pack、unpack。
 
 命令行实验室的方法：
-        file or echo "Heelo" |perl -ne 'perl 语句;' 即可
+        X
 1、大小写处理函数 lc(转为小写) uc(转为大写) 。
 $text="zhengwen feng";
 $text2=lc $text;

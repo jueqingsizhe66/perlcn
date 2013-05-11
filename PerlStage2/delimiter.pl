@@ -29,8 +29,15 @@ print "错误s *之后的结果",$text,"\n";
 #}
 
 
-$text = '"You need a 2\"x3\" photo';
+$text = '"You need a 2\"x3\" photo"';
 if($text =~ m/"([^"]|(?<=\\)")"/igx){
     $text = $1;
     print $text,"\n";
 }
+
+
+$text = '"You need a 2\"x3\" photo"';
+if($text =~ m/((?:[^"]|\\.)+p)/g){  #get to what I want~~
+    print $text,"\t I need\n" ;
+    print $1,"\t ye!";
+    }
